@@ -10,4 +10,7 @@
 <p><%= current_user.id %></p>
 <p><%= current_user.first_name %> <%= current_user.last_name %></p>
 
+
+<td><%= link_to 'Edit', edit_user_path(current_user) %></td>
+
 <%= link_to 'List of Users', users_path %>
