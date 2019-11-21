@@ -7,10 +7,7 @@
 <% end %>
 
 
-<%= link_to 'Profile', profile_path %>
+<p><%= current_user.id %></p>
+<p><%= current_user.first_name %> <%= current_user.last_name %></p>
+
 <%= link_to 'List of Users', users_path %>
-
-
-<p id="notice"><%= notice %></p>
-
-<h1>Bienvenue ! </h1>
