@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'friends/index'
+
+  get 'friends/destroy'
+
+  resources :friend_requests
   get 'profile' => 'pages#profile'
 
   root 'home#index'
